@@ -1,4 +1,4 @@
-module.exports = function prismaCache(prisma, options) {
+module.exports = function prismaCache(prisma, options = {}) {
   const cache = new NodeCache({ stdTTL: options.expiration || 600 });
   prisma.$use(async (params, next) => {
     const { action, model, args } = params;
