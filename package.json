@@ -1,0 +1,13 @@
+{
+  "name": "prisma-cache",
+  "version": "1.0.0",
+  "description": "Caches prisma requests",
+  "main": "index.js",
+  "repository": "https://github.com/RichardX366/prisma-cache.git",
+  "author": "Richard Xiong <richardx366@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^4.0.0",
+    "node-cache": "^5.1.2"
+  }
+}
