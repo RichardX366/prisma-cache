@@ -6,6 +6,9 @@
   "repository": "https://github.com/RichardX366/prisma-cache.git",
   "author": "Richard Xiong <richardx366@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "npm": "np --yolo"
+  },
   "dependencies": {
     "@prisma/client": "^4.0.0",
     "node-cache": "^5.1.2"
