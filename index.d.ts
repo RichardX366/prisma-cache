@@ -1,7 +1,12 @@
 import { PrismaClient } from '@prisma/client';
-import NodeCache from 'node-cache';
 
+/**
+ * Initiates caching for the given prisma client.
+ * @param prisma Prisma client that will have caching enabled.
+ * @param options Options for the caching.
+ * @param {number} [options.expiration=600] How long queries will take to expire in seconds.
+ */
 export default function prismaCache(
   prisma: PrismaClient,
-  cache: NodeCache,
+  options: { expiration: number },
 ): void;
