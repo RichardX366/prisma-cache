@@ -1,6 +1,6 @@
 {
   "name": "prisma-cache",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Caches prisma requests",
   "main": "index.js",
   "repository": "https://github.com/RichardX366/prisma-cache.git",
