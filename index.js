@@ -9,7 +9,9 @@ module.exports = function prismaCache(prisma, options = {}) {
       action === 'aggregate' ||
       action === 'count'
     ) {
-      const key = `${model}${action}${JSON.stringify(args)}`;
+      const key = `${model}${action}${JSON.stringify(args, (key, value) =>
+        typeof value === 'bigint' ? value.toString() : value,
+      )}`;
       const cached = cache.get(key);
       if (cached) return cached;
       const result = await next(params);
